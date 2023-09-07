@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+.container {
+  max-width: 500px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 700px;
+  border: 1px solid black;
+  padding: 30px;
+  border-radius: 5px;
+  background-image: url("src/assets/backgroundimg.jpg");
+}

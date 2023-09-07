@@ -1,0 +1,16 @@
+.lists {
+  border: 1px solid darkturquoise;
+  padding: 10px;
+  margin: 10px;
+}
+
+.title {
+  white-space: nowrap;
+  width: 230px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.status {
+  text-align: center;
+}

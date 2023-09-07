@@ -1,0 +1,23 @@
+<div class="">
+  <app-task-filter (filterChanged)="setFilter($event)"></app-task-filter>
+  <h2>Task List</h2>
+  <div class="row lists" *ngFor="let task of tasks">
+    <div class="col-1">
+      <label>
+        <input
+          type="checkbox"
+          [checked]="task.completed === 1"
+          (change)="markTaskAsCompleted(task.id, $event)"
+      /></label>
+    </div>
+    <div class="col-7 title">
+      {{ task.title }}
+    </div>
+    <div
+      class="col-4 status"
+      [ngStyle]="{ color: task.completed === 1 ? 'green' : 'red' }"
+    >
+      {{ task.completed === 1 ? "Completed" : "Incomplete" }}
+    </div>
+  </div>
+</div>

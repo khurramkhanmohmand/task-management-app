@@ -1,0 +1,14 @@
+<h2>Add New Task</h2>
+<div>
+  <div>
+    <input
+      [(ngModel)]="newTask.title"
+      placeholder="Task title"
+      class="form-control"
+    />
+  </div>
+
+  <div class="mainBtn">
+    <button (click)="addTask()" class="addBtn">Add Task</button>
+  </div>
+</div>
